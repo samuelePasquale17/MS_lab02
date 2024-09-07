@@ -1,0 +1,207 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BOOTHMUL_N8
+Version: S-2021.06-SP4
+Date   : Tue Apr 23 23:37:10 2024
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[1] (input port)
+  Endpoint: Y[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_N8        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[1] (in)                                               0.00       0.00 f
+  SHFT_3/A[1] (shift_pow2_N8_5)                           0.00       0.00 f
+  SHFT_3/mult_31/A[1] (shift_pow2_N8_5_DW02_mult_0_DW02_mult_4)
+                                                          0.00       0.00 f
+  SHFT_3/mult_31/U40/ZN (INV_X1)                          0.07       0.07 r
+  SHFT_3/mult_31/U99/ZN (NOR2_X1)                         0.04       0.11 f
+  SHFT_3/mult_31/U18/Z (XOR2_X1)                          0.07       0.18 f
+  SHFT_3/mult_31/S2_2_2/S (FA_X1)                         0.11       0.29 f
+  SHFT_3/mult_31/S2_3_1/S (FA_X1)                         0.11       0.40 f
+  SHFT_3/mult_31/S1_4_0/S (FA_X1)                         0.11       0.51 f
+  SHFT_3/mult_31/FS_1/A[2] (shift_pow2_N8_5_DW01_add_0_DW01_add_4)
+                                                          0.00       0.51 f
+  SHFT_3/mult_31/FS_1/SUM[2] (shift_pow2_N8_5_DW01_add_0_DW01_add_4)
+                                                          0.00       0.51 f
+  SHFT_3/mult_31/PRODUCT[4] (shift_pow2_N8_5_DW02_mult_0_DW02_mult_4)
+                                                          0.00       0.51 f
+  SHFT_3/SA[4] (shift_pow2_N8_5)                          0.00       0.51 f
+  COMP_3/A[4] (complementor_N16_5)                        0.00       0.51 f
+  COMP_3/U14/ZN (INV_X1)                                  0.03       0.55 r
+  COMP_3/add_0_root_add_19_ni/A[4] (complementor_N16_5_DW01_inc_0_DW01_inc_4)
+                                                          0.00       0.55 r
+  COMP_3/add_0_root_add_19_ni/U1_1_4/CO (HA_X1)           0.06       0.60 r
+  COMP_3/add_0_root_add_19_ni/U1_1_5/CO (HA_X1)           0.06       0.67 r
+  COMP_3/add_0_root_add_19_ni/U1_1_6/CO (HA_X1)           0.06       0.73 r
+  COMP_3/add_0_root_add_19_ni/U1_1_7/CO (HA_X1)           0.06       0.79 r
+  COMP_3/add_0_root_add_19_ni/U1_1_8/S (HA_X1)            0.07       0.86 r
+  COMP_3/add_0_root_add_19_ni/SUM[8] (complementor_N16_5_DW01_inc_0_DW01_inc_4)
+                                                          0.00       0.86 r
+  COMP_3/Y[8] (complementor_N16_5)                        0.00       0.86 r
+  MUX_1/A5[8] (mux_8to1_N16_3)                            0.00       0.86 r
+  MUX_1/MUX3/A[8] (muxN1_N16_19)                          0.00       0.86 r
+  MUX_1/MUX3/mux21_g_8/A (mux21_8472)                     0.00       0.86 r
+  MUX_1/MUX3/mux21_g_8/NAND1/A (nd2_25416)                0.00       0.86 r
+  MUX_1/MUX3/mux21_g_8/NAND1/U1/ZN (NAND2_X1)             0.03       0.89 f
+  MUX_1/MUX3/mux21_g_8/NAND1/Y (nd2_25416)                0.00       0.89 f
+  MUX_1/MUX3/mux21_g_8/NAND3/A (nd2_25414)                0.00       0.89 f
+  MUX_1/MUX3/mux21_g_8/NAND3/U1/ZN (NAND2_X1)             0.03       0.92 r
+  MUX_1/MUX3/mux21_g_8/NAND3/Y (nd2_25414)                0.00       0.92 r
+  MUX_1/MUX3/mux21_g_8/Y (mux21_8472)                     0.00       0.92 r
+  MUX_1/MUX3/Y[8] (muxN1_N16_19)                          0.00       0.92 r
+  MUX_1/MUX6/A[8] (muxN1_N16_16)                          0.00       0.92 r
+  MUX_1/MUX6/mux21_g_8/A (mux21_8424)                     0.00       0.92 r
+  MUX_1/MUX6/mux21_g_8/NAND1/A (nd2_25272)                0.00       0.92 r
+  MUX_1/MUX6/mux21_g_8/NAND1/U1/ZN (NAND2_X1)             0.03       0.94 f
+  MUX_1/MUX6/mux21_g_8/NAND1/Y (nd2_25272)                0.00       0.94 f
+  MUX_1/MUX6/mux21_g_8/NAND3/A (nd2_25270)                0.00       0.94 f
+  MUX_1/MUX6/mux21_g_8/NAND3/U1/ZN (NAND2_X1)             0.03       0.98 r
+  MUX_1/MUX6/mux21_g_8/NAND3/Y (nd2_25270)                0.00       0.98 r
+  MUX_1/MUX6/mux21_g_8/Y (mux21_8424)                     0.00       0.98 r
+  MUX_1/MUX6/Y[8] (muxN1_N16_16)                          0.00       0.98 r
+  MUX_1/MUX7/B[8] (muxN1_N16_15)                          0.00       0.98 r
+  MUX_1/MUX7/mux21_g_8/B (mux21_8408)                     0.00       0.98 r
+  MUX_1/MUX7/mux21_g_8/NAND2/A (nd2_25223)                0.00       0.98 r
+  MUX_1/MUX7/mux21_g_8/NAND2/U1/ZN (NAND2_X1)             0.03       1.00 f
+  MUX_1/MUX7/mux21_g_8/NAND2/Y (nd2_25223)                0.00       1.00 f
+  MUX_1/MUX7/mux21_g_8/NAND3/B (nd2_25222)                0.00       1.00 f
+  MUX_1/MUX7/mux21_g_8/NAND3/U1/ZN (NAND2_X1)             0.06       1.06 r
+  MUX_1/MUX7/mux21_g_8/NAND3/Y (nd2_25222)                0.00       1.06 r
+  MUX_1/MUX7/mux21_g_8/Y (mux21_8408)                     0.00       1.06 r
+  MUX_1/MUX7/Y[8] (muxN1_N16_15)                          0.00       1.06 r
+  MUX_1/Y[8] (mux_8to1_N16_3)                             0.00       1.06 r
+  SUM0_0/B[8] (P4_adder_N16_Nbit_blocks4_0)               0.00       1.06 r
+  SUM0_0/SG/B[8] (sum_generator_N16_Nbit_blocks4_0)       0.00       1.06 r
+  SUM0_0/SG/CSB_3/B[0] (carry_select_block_N4_250)        0.00       1.06 r
+  SUM0_0/SG/CSB_3/RCA2/B[0] (RCA_N4_499)                  0.00       1.06 r
+  SUM0_0/SG/CSB_3/RCA2/FAI_1/B (FA_1996)                  0.00       1.06 r
+  SUM0_0/SG/CSB_3/RCA2/FAI_1/U4/Z (XOR2_X1)               0.05       1.11 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_1/U2/ZN (AOI22_X1)             0.06       1.17 r
+  SUM0_0/SG/CSB_3/RCA2/FAI_1/U1/ZN (INV_X1)               0.03       1.20 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_1/Co (FA_1996)                 0.00       1.20 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_2/Ci (FA_1995)                 0.00       1.20 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_2/U2/ZN (AOI22_X1)             0.06       1.26 r
+  SUM0_0/SG/CSB_3/RCA2/FAI_2/U1/ZN (INV_X1)               0.03       1.29 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_2/Co (FA_1995)                 0.00       1.29 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_3/Ci (FA_1994)                 0.00       1.29 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_3/U2/ZN (AOI22_X1)             0.06       1.35 r
+  SUM0_0/SG/CSB_3/RCA2/FAI_3/U1/ZN (INV_X1)               0.03       1.38 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_3/Co (FA_1994)                 0.00       1.38 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_4/Ci (FA_1993)                 0.00       1.38 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_4/U3/Z (XOR2_X1)               0.07       1.45 f
+  SUM0_0/SG/CSB_3/RCA2/FAI_4/S (FA_1993)                  0.00       1.45 f
+  SUM0_0/SG/CSB_3/RCA2/S[3] (RCA_N4_499)                  0.00       1.45 f
+  SUM0_0/SG/CSB_3/MUX/A[3] (muxN1_N4_250)                 0.00       1.45 f
+  SUM0_0/SG/CSB_3/MUX/mux21_g_3/A (mux21_8165)            0.00       1.45 f
+  SUM0_0/SG/CSB_3/MUX/mux21_g_3/NAND1/A (nd2_24495)       0.00       1.45 f
+  SUM0_0/SG/CSB_3/MUX/mux21_g_3/NAND1/U1/ZN (NAND2_X1)
+                                                          0.03       1.48 r
+  SUM0_0/SG/CSB_3/MUX/mux21_g_3/NAND1/Y (nd2_24495)       0.00       1.48 r
+  SUM0_0/SG/CSB_3/MUX/mux21_g_3/NAND3/A (nd2_24493)       0.00       1.48 r
+  SUM0_0/SG/CSB_3/MUX/mux21_g_3/NAND3/U1/ZN (NAND2_X1)
+                                                          0.05       1.53 f
+  SUM0_0/SG/CSB_3/MUX/mux21_g_3/NAND3/Y (nd2_24493)       0.00       1.53 f
+  SUM0_0/SG/CSB_3/MUX/mux21_g_3/Y (mux21_8165)            0.00       1.53 f
+  SUM0_0/SG/CSB_3/MUX/Y[3] (muxN1_N4_250)                 0.00       1.53 f
+  SUM0_0/SG/CSB_3/S[3] (carry_select_block_N4_250)        0.00       1.53 f
+  SUM0_0/SG/S[11] (sum_generator_N16_Nbit_blocks4_0)      0.00       1.53 f
+  SUM0_0/S[11] (P4_adder_N16_Nbit_blocks4_0)              0.00       1.53 f
+  SUMn_1/B[11] (P4_adder_N16_Nbit_blocks4_2)              0.00       1.53 f
+  SUMn_1/CG/B[11] (carry_generator_N16_carry_range4_2)
+                                                          0.00       1.53 f
+  SUMn_1/CG/PG_NET/B[11] (pg_network_N16_2)               0.00       1.53 f
+  SUMn_1/CG/PG_NET/U14/Z (XOR2_X1)                        0.08       1.61 f
+  SUMn_1/CG/PG_NET/P[11] (pg_network_N16_2)               0.00       1.61 f
+  SUMn_1/CG/CG/P[11] (carry_generator_sparse_tree_N16_carry_range4_2)
+                                                          0.00       1.61 f
+  SUMn_1/CG/CG/FRST_PG_1_12/P_i_k (pg_block_963)          0.00       1.61 f
+  SUMn_1/CG/CG/FRST_PG_1_12/U2/ZN (AOI21_X1)              0.04       1.65 r
+  SUMn_1/CG/CG/FRST_PG_1_12/U1/ZN (INV_X1)                0.02       1.68 f
+  SUMn_1/CG/CG/FRST_PG_1_12/G_i_j (pg_block_963)          0.00       1.68 f
+  SUMn_1/CG/CG/FRST_PG_2_12/G_i_k (pg_block_959)          0.00       1.68 f
+  SUMn_1/CG/CG/FRST_PG_2_12/U2/ZN (AOI21_X1)              0.05       1.73 r
+  SUMn_1/CG/CG/FRST_PG_2_12/U1/ZN (INV_X1)                0.03       1.75 f
+  SUMn_1/CG/CG/FRST_PG_2_12/G_i_j (pg_block_959)          0.00       1.75 f
+  SUMn_1/CG/CG/G_L2_1_8_12/G_i_k (g_block_262)            0.00       1.75 f
+  SUMn_1/CG/CG/G_L2_1_8_12/U2/ZN (AOI21_X1)               0.05       1.81 r
+  SUMn_1/CG/CG/G_L2_1_8_12/U1/ZN (INV_X1)                 0.04       1.85 f
+  SUMn_1/CG/CG/G_L2_1_8_12/G_i_j (g_block_262)            0.00       1.85 f
+  SUMn_1/CG/CG/C[3] (carry_generator_sparse_tree_N16_carry_range4_2)
+                                                          0.00       1.85 f
+  SUMn_1/CG/C[3] (carry_generator_N16_carry_range4_2)     0.00       1.85 f
+  SUMn_1/SG/Carry[2] (sum_generator_N16_Nbit_blocks4_2)
+                                                          0.00       1.85 f
+  SUMn_1/SG/CSB_4/Cin (carry_select_block_N4_245)         0.00       1.85 f
+  SUMn_1/SG/CSB_4/MUX/S (muxN1_N4_245)                    0.00       1.85 f
+  SUMn_1/SG/CSB_4/MUX/mux21_g_0/S (mux21_8148)            0.00       1.85 f
+  SUMn_1/SG/CSB_4/MUX/mux21_g_0/NAND1/B (nd2_24444)       0.00       1.85 f
+  SUMn_1/SG/CSB_4/MUX/mux21_g_0/NAND1/U1/ZN (NAND2_X1)
+                                                          0.04       1.89 r
+  SUMn_1/SG/CSB_4/MUX/mux21_g_0/NAND1/Y (nd2_24444)       0.00       1.89 r
+  SUMn_1/SG/CSB_4/MUX/mux21_g_0/NAND3/A (nd2_24442)       0.00       1.89 r
+  SUMn_1/SG/CSB_4/MUX/mux21_g_0/NAND3/U1/ZN (NAND2_X1)
+                                                          0.05       1.94 f
+  SUMn_1/SG/CSB_4/MUX/mux21_g_0/NAND3/Y (nd2_24442)       0.00       1.94 f
+  SUMn_1/SG/CSB_4/MUX/mux21_g_0/Y (mux21_8148)            0.00       1.94 f
+  SUMn_1/SG/CSB_4/MUX/Y[0] (muxN1_N4_245)                 0.00       1.94 f
+  SUMn_1/SG/CSB_4/S[0] (carry_select_block_N4_245)        0.00       1.94 f
+  SUMn_1/SG/S[12] (sum_generator_N16_Nbit_blocks4_2)      0.00       1.94 f
+  SUMn_1/S[12] (P4_adder_N16_Nbit_blocks4_2)              0.00       1.94 f
+  SUMn_2/B[12] (P4_adder_N16_Nbit_blocks4_1)              0.00       1.94 f
+  SUMn_2/SG/B[12] (sum_generator_N16_Nbit_blocks4_1)      0.00       1.94 f
+  SUMn_2/SG/CSB_4/B[0] (carry_select_block_N4_241)        0.00       1.94 f
+  SUMn_2/SG/CSB_4/RCA2/B[0] (RCA_N4_481)                  0.00       1.94 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_1/B (FA_1924)                  0.00       1.94 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_1/U4/Z (XOR2_X1)               0.09       2.04 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_1/U2/ZN (AOI22_X1)             0.06       2.10 r
+  SUMn_2/SG/CSB_4/RCA2/FAI_1/U1/ZN (INV_X1)               0.03       2.12 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_1/Co (FA_1924)                 0.00       2.12 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_2/Ci (FA_1923)                 0.00       2.12 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_2/U2/ZN (AOI22_X1)             0.06       2.19 r
+  SUMn_2/SG/CSB_4/RCA2/FAI_2/U1/ZN (INV_X1)               0.03       2.21 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_2/Co (FA_1923)                 0.00       2.21 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_3/Ci (FA_1922)                 0.00       2.21 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_3/U2/ZN (AOI22_X1)             0.06       2.27 r
+  SUMn_2/SG/CSB_4/RCA2/FAI_3/U1/ZN (INV_X1)               0.03       2.30 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_3/Co (FA_1922)                 0.00       2.30 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_4/Ci (FA_1921)                 0.00       2.30 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_4/U3/Z (XOR2_X1)               0.07       2.37 f
+  SUMn_2/SG/CSB_4/RCA2/FAI_4/S (FA_1921)                  0.00       2.37 f
+  SUMn_2/SG/CSB_4/RCA2/S[3] (RCA_N4_481)                  0.00       2.37 f
+  SUMn_2/SG/CSB_4/MUX/A[3] (muxN1_N4_241)                 0.00       2.37 f
+  SUMn_2/SG/CSB_4/MUX/mux21_g_3/A (mux21_8129)            0.00       2.37 f
+  SUMn_2/SG/CSB_4/MUX/mux21_g_3/NAND1/A (nd2_24387)       0.00       2.37 f
+  SUMn_2/SG/CSB_4/MUX/mux21_g_3/NAND1/U1/ZN (NAND2_X1)
+                                                          0.03       2.40 r
+  SUMn_2/SG/CSB_4/MUX/mux21_g_3/NAND1/Y (nd2_24387)       0.00       2.40 r
+  SUMn_2/SG/CSB_4/MUX/mux21_g_3/NAND3/A (nd2_24385)       0.00       2.40 r
+  SUMn_2/SG/CSB_4/MUX/mux21_g_3/NAND3/U1/ZN (NAND2_X1)
+                                                          0.02       2.42 f
+  SUMn_2/SG/CSB_4/MUX/mux21_g_3/NAND3/Y (nd2_24385)       0.00       2.42 f
+  SUMn_2/SG/CSB_4/MUX/mux21_g_3/Y (mux21_8129)            0.00       2.42 f
+  SUMn_2/SG/CSB_4/MUX/Y[3] (muxN1_N4_241)                 0.00       2.42 f
+  SUMn_2/SG/CSB_4/S[3] (carry_select_block_N4_241)        0.00       2.42 f
+  SUMn_2/SG/S[15] (sum_generator_N16_Nbit_blocks4_1)      0.00       2.42 f
+  SUMn_2/S[15] (P4_adder_N16_Nbit_blocks4_1)              0.00       2.42 f
+  Y[15] (out)                                             0.00       2.43 f
+  data arrival time                                                  2.43
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
