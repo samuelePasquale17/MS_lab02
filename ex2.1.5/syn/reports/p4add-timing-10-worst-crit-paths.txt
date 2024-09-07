@@ -1,0 +1,696 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : P4_adder_Nbit_blocks4
+Version: S-2021.06-SP4
+Date   : Tue Apr 23 15:54:58 2024
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_28/G_kmin1_j (g_block_2)                0.00       0.51 r
+  CG/CG/G_L2_2_16_28/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_28/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_28/G_i_j (g_block_2)                    0.00       0.62 r
+  CG/CG/C[7] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[7] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[6] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_8/Cin (carry_select_block_N4_1)                  0.00       0.62 r
+  SG/CSB_8/MUX/S (muxN1_N4_1)                             0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_3/S (mux21_1)                      0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_3/NOT1/A (iv_1)                    0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_3/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_8/MUX/mux21_g_3/NOT1/Y (iv_1)                    0.00       0.65 f
+  SG/CSB_8/MUX/mux21_g_3/NAND2/B (nd2_2)                  0.00       0.65 f
+  SG/CSB_8/MUX/mux21_g_3/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_8/MUX/mux21_g_3/NAND2/Y (nd2_2)                  0.00       0.68 r
+  SG/CSB_8/MUX/mux21_g_3/NAND3/B (nd2_1)                  0.00       0.68 r
+  SG/CSB_8/MUX/mux21_g_3/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_8/MUX/mux21_g_3/NAND3/Y (nd2_1)                  0.00       0.70 f
+  SG/CSB_8/MUX/mux21_g_3/Y (mux21_1)                      0.00       0.70 f
+  SG/CSB_8/MUX/Y[3] (muxN1_N4_1)                          0.00       0.70 f
+  SG/CSB_8/S[3] (carry_select_block_N4_1)                 0.00       0.70 f
+  SG/S[31] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[31] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[30] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_28/G_kmin1_j (g_block_2)                0.00       0.51 r
+  CG/CG/G_L2_2_16_28/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_28/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_28/G_i_j (g_block_2)                    0.00       0.62 r
+  CG/CG/C[7] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[7] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[6] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_8/Cin (carry_select_block_N4_1)                  0.00       0.62 r
+  SG/CSB_8/MUX/S (muxN1_N4_1)                             0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_2/S (mux21_2)                      0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_2/NOT1/A (iv_2)                    0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_2/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_8/MUX/mux21_g_2/NOT1/Y (iv_2)                    0.00       0.65 f
+  SG/CSB_8/MUX/mux21_g_2/NAND2/B (nd2_5)                  0.00       0.65 f
+  SG/CSB_8/MUX/mux21_g_2/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_8/MUX/mux21_g_2/NAND2/Y (nd2_5)                  0.00       0.68 r
+  SG/CSB_8/MUX/mux21_g_2/NAND3/B (nd2_4)                  0.00       0.68 r
+  SG/CSB_8/MUX/mux21_g_2/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_8/MUX/mux21_g_2/NAND3/Y (nd2_4)                  0.00       0.70 f
+  SG/CSB_8/MUX/mux21_g_2/Y (mux21_2)                      0.00       0.70 f
+  SG/CSB_8/MUX/Y[2] (muxN1_N4_1)                          0.00       0.70 f
+  SG/CSB_8/S[2] (carry_select_block_N4_1)                 0.00       0.70 f
+  SG/S[30] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[30] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[29] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_28/G_kmin1_j (g_block_2)                0.00       0.51 r
+  CG/CG/G_L2_2_16_28/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_28/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_28/G_i_j (g_block_2)                    0.00       0.62 r
+  CG/CG/C[7] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[7] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[6] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_8/Cin (carry_select_block_N4_1)                  0.00       0.62 r
+  SG/CSB_8/MUX/S (muxN1_N4_1)                             0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_1/S (mux21_3)                      0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_1/NOT1/A (iv_3)                    0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_1/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_8/MUX/mux21_g_1/NOT1/Y (iv_3)                    0.00       0.65 f
+  SG/CSB_8/MUX/mux21_g_1/NAND2/B (nd2_8)                  0.00       0.65 f
+  SG/CSB_8/MUX/mux21_g_1/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_8/MUX/mux21_g_1/NAND2/Y (nd2_8)                  0.00       0.68 r
+  SG/CSB_8/MUX/mux21_g_1/NAND3/B (nd2_7)                  0.00       0.68 r
+  SG/CSB_8/MUX/mux21_g_1/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_8/MUX/mux21_g_1/NAND3/Y (nd2_7)                  0.00       0.70 f
+  SG/CSB_8/MUX/mux21_g_1/Y (mux21_3)                      0.00       0.70 f
+  SG/CSB_8/MUX/Y[1] (muxN1_N4_1)                          0.00       0.70 f
+  SG/CSB_8/S[1] (carry_select_block_N4_1)                 0.00       0.70 f
+  SG/S[29] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[29] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[27] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_24/G_kmin1_j (g_block_3)                0.00       0.51 r
+  CG/CG/G_L2_2_16_24/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_24/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_24/G_i_j (g_block_3)                    0.00       0.62 r
+  CG/CG/C[6] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[6] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[5] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_7/Cin (carry_select_block_N4_2)                  0.00       0.62 r
+  SG/CSB_7/MUX/S (muxN1_N4_2)                             0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_3/S (mux21_5)                      0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_3/NOT1/A (iv_5)                    0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_3/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_7/MUX/mux21_g_3/NOT1/Y (iv_5)                    0.00       0.65 f
+  SG/CSB_7/MUX/mux21_g_3/NAND2/B (nd2_14)                 0.00       0.65 f
+  SG/CSB_7/MUX/mux21_g_3/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_7/MUX/mux21_g_3/NAND2/Y (nd2_14)                 0.00       0.68 r
+  SG/CSB_7/MUX/mux21_g_3/NAND3/B (nd2_13)                 0.00       0.68 r
+  SG/CSB_7/MUX/mux21_g_3/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_7/MUX/mux21_g_3/NAND3/Y (nd2_13)                 0.00       0.70 f
+  SG/CSB_7/MUX/mux21_g_3/Y (mux21_5)                      0.00       0.70 f
+  SG/CSB_7/MUX/Y[3] (muxN1_N4_2)                          0.00       0.70 f
+  SG/CSB_7/S[3] (carry_select_block_N4_2)                 0.00       0.70 f
+  SG/S[27] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[27] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[26] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_24/G_kmin1_j (g_block_3)                0.00       0.51 r
+  CG/CG/G_L2_2_16_24/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_24/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_24/G_i_j (g_block_3)                    0.00       0.62 r
+  CG/CG/C[6] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[6] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[5] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_7/Cin (carry_select_block_N4_2)                  0.00       0.62 r
+  SG/CSB_7/MUX/S (muxN1_N4_2)                             0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_2/S (mux21_6)                      0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_2/NOT1/A (iv_6)                    0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_2/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_7/MUX/mux21_g_2/NOT1/Y (iv_6)                    0.00       0.65 f
+  SG/CSB_7/MUX/mux21_g_2/NAND2/B (nd2_17)                 0.00       0.65 f
+  SG/CSB_7/MUX/mux21_g_2/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_7/MUX/mux21_g_2/NAND2/Y (nd2_17)                 0.00       0.68 r
+  SG/CSB_7/MUX/mux21_g_2/NAND3/B (nd2_16)                 0.00       0.68 r
+  SG/CSB_7/MUX/mux21_g_2/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_7/MUX/mux21_g_2/NAND3/Y (nd2_16)                 0.00       0.70 f
+  SG/CSB_7/MUX/mux21_g_2/Y (mux21_6)                      0.00       0.70 f
+  SG/CSB_7/MUX/Y[2] (muxN1_N4_2)                          0.00       0.70 f
+  SG/CSB_7/S[2] (carry_select_block_N4_2)                 0.00       0.70 f
+  SG/S[26] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[26] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[25] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_24/G_kmin1_j (g_block_3)                0.00       0.51 r
+  CG/CG/G_L2_2_16_24/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_24/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_24/G_i_j (g_block_3)                    0.00       0.62 r
+  CG/CG/C[6] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[6] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[5] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_7/Cin (carry_select_block_N4_2)                  0.00       0.62 r
+  SG/CSB_7/MUX/S (muxN1_N4_2)                             0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_1/S (mux21_7)                      0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_1/NOT1/A (iv_7)                    0.00       0.62 r
+  SG/CSB_7/MUX/mux21_g_1/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_7/MUX/mux21_g_1/NOT1/Y (iv_7)                    0.00       0.65 f
+  SG/CSB_7/MUX/mux21_g_1/NAND2/B (nd2_20)                 0.00       0.65 f
+  SG/CSB_7/MUX/mux21_g_1/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_7/MUX/mux21_g_1/NAND2/Y (nd2_20)                 0.00       0.68 r
+  SG/CSB_7/MUX/mux21_g_1/NAND3/B (nd2_19)                 0.00       0.68 r
+  SG/CSB_7/MUX/mux21_g_1/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_7/MUX/mux21_g_1/NAND3/Y (nd2_19)                 0.00       0.70 f
+  SG/CSB_7/MUX/mux21_g_1/Y (mux21_7)                      0.00       0.70 f
+  SG/CSB_7/MUX/Y[1] (muxN1_N4_2)                          0.00       0.70 f
+  SG/CSB_7/S[1] (carry_select_block_N4_2)                 0.00       0.70 f
+  SG/S[25] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[25] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[23] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_20/G_kmin1_j (g_block_4)                0.00       0.51 r
+  CG/CG/G_L2_2_16_20/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_20/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_20/G_i_j (g_block_4)                    0.00       0.62 r
+  CG/CG/C[5] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[5] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[4] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_6/Cin (carry_select_block_N4_3)                  0.00       0.62 r
+  SG/CSB_6/MUX/S (muxN1_N4_3)                             0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_3/S (mux21_9)                      0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_3/NOT1/A (iv_9)                    0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_3/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_6/MUX/mux21_g_3/NOT1/Y (iv_9)                    0.00       0.65 f
+  SG/CSB_6/MUX/mux21_g_3/NAND2/B (nd2_26)                 0.00       0.65 f
+  SG/CSB_6/MUX/mux21_g_3/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_6/MUX/mux21_g_3/NAND2/Y (nd2_26)                 0.00       0.68 r
+  SG/CSB_6/MUX/mux21_g_3/NAND3/B (nd2_25)                 0.00       0.68 r
+  SG/CSB_6/MUX/mux21_g_3/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_6/MUX/mux21_g_3/NAND3/Y (nd2_25)                 0.00       0.70 f
+  SG/CSB_6/MUX/mux21_g_3/Y (mux21_9)                      0.00       0.70 f
+  SG/CSB_6/MUX/Y[3] (muxN1_N4_3)                          0.00       0.70 f
+  SG/CSB_6/S[3] (carry_select_block_N4_3)                 0.00       0.70 f
+  SG/S[23] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[23] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[22] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_20/G_kmin1_j (g_block_4)                0.00       0.51 r
+  CG/CG/G_L2_2_16_20/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_20/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_20/G_i_j (g_block_4)                    0.00       0.62 r
+  CG/CG/C[5] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[5] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[4] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_6/Cin (carry_select_block_N4_3)                  0.00       0.62 r
+  SG/CSB_6/MUX/S (muxN1_N4_3)                             0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_2/S (mux21_10)                     0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_2/NOT1/A (iv_10)                   0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_2/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_6/MUX/mux21_g_2/NOT1/Y (iv_10)                   0.00       0.65 f
+  SG/CSB_6/MUX/mux21_g_2/NAND2/B (nd2_29)                 0.00       0.65 f
+  SG/CSB_6/MUX/mux21_g_2/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_6/MUX/mux21_g_2/NAND2/Y (nd2_29)                 0.00       0.68 r
+  SG/CSB_6/MUX/mux21_g_2/NAND3/B (nd2_28)                 0.00       0.68 r
+  SG/CSB_6/MUX/mux21_g_2/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_6/MUX/mux21_g_2/NAND3/Y (nd2_28)                 0.00       0.70 f
+  SG/CSB_6/MUX/mux21_g_2/Y (mux21_10)                     0.00       0.70 f
+  SG/CSB_6/MUX/Y[2] (muxN1_N4_3)                          0.00       0.70 f
+  SG/CSB_6/S[2] (carry_select_block_N4_3)                 0.00       0.70 f
+  SG/S[22] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[22] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[21] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_20/G_kmin1_j (g_block_4)                0.00       0.51 r
+  CG/CG/G_L2_2_16_20/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_20/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_20/G_i_j (g_block_4)                    0.00       0.62 r
+  CG/CG/C[5] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[5] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[4] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_6/Cin (carry_select_block_N4_3)                  0.00       0.62 r
+  SG/CSB_6/MUX/S (muxN1_N4_3)                             0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_1/S (mux21_11)                     0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_1/NOT1/A (iv_11)                   0.00       0.62 r
+  SG/CSB_6/MUX/mux21_g_1/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_6/MUX/mux21_g_1/NOT1/Y (iv_11)                   0.00       0.65 f
+  SG/CSB_6/MUX/mux21_g_1/NAND2/B (nd2_32)                 0.00       0.65 f
+  SG/CSB_6/MUX/mux21_g_1/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_6/MUX/mux21_g_1/NAND2/Y (nd2_32)                 0.00       0.68 r
+  SG/CSB_6/MUX/mux21_g_1/NAND3/B (nd2_31)                 0.00       0.68 r
+  SG/CSB_6/MUX/mux21_g_1/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_6/MUX/mux21_g_1/NAND3/Y (nd2_31)                 0.00       0.70 f
+  SG/CSB_6/MUX/mux21_g_1/Y (mux21_11)                     0.00       0.70 f
+  SG/CSB_6/MUX/Y[1] (muxN1_N4_3)                          0.00       0.70 f
+  SG/CSB_6/S[1] (carry_select_block_N4_3)                 0.00       0.70 f
+  SG/S[21] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[21] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[28] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_adder_Nbit_blocks4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  CG/B[0] (carry_generator_N32_carry_range4)              0.00       0.00 r
+  CG/PG_NET/B[0] (pg_network_N32)                         0.00       0.00 r
+  CG/PG_NET/U32/Z (XOR2_X1)                               0.07       0.07 r
+  CG/PG_NET/P[0] (pg_network_N32)                         0.00       0.07 r
+  CG/CG/P[0] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.07 r
+  CG/CG/U2/ZN (AOI21_X1)                                  0.03       0.10 f
+  CG/CG/U1/ZN (INV_X1)                                    0.03       0.12 r
+  CG/CG/first_G_1_2/G_kmin1_j (g_block_0)                 0.00       0.12 r
+  CG/CG/first_G_1_2/U2/ZN (AOI21_X1)                      0.03       0.15 f
+  CG/CG/first_G_1_2/U1/ZN (INV_X1)                        0.03       0.18 r
+  CG/CG/first_G_1_2/G_i_j (g_block_0)                     0.00       0.18 r
+  CG/CG/first_G_2_4/G_kmin1_j (g_block_8)                 0.00       0.18 r
+  CG/CG/first_G_2_4/U2/ZN (AOI21_X1)                      0.03       0.20 f
+  CG/CG/first_G_2_4/U1/ZN (INV_X1)                        0.07       0.27 r
+  CG/CG/first_G_2_4/G_i_j (g_block_8)                     0.00       0.27 r
+  CG/CG/G_L2_0_4_8/G_kmin1_j (g_block_7)                  0.00       0.27 r
+  CG/CG/G_L2_0_4_8/U2/ZN (AOI21_X1)                       0.04       0.31 f
+  CG/CG/G_L2_0_4_8/U1/ZN (INV_X1)                         0.07       0.39 r
+  CG/CG/G_L2_0_4_8/G_i_j (g_block_7)                      0.00       0.39 r
+  CG/CG/G_L2_1_8_16/G_kmin1_j (g_block_5)                 0.00       0.39 r
+  CG/CG/G_L2_1_8_16/U2/ZN (AOI21_X1)                      0.04       0.43 f
+  CG/CG/G_L2_1_8_16/U1/ZN (INV_X1)                        0.08       0.51 r
+  CG/CG/G_L2_1_8_16/G_i_j (g_block_5)                     0.00       0.51 r
+  CG/CG/G_L2_2_16_28/G_kmin1_j (g_block_2)                0.00       0.51 r
+  CG/CG/G_L2_2_16_28/U2/ZN (AOI21_X1)                     0.04       0.55 f
+  CG/CG/G_L2_2_16_28/U1/ZN (INV_X1)                       0.06       0.62 r
+  CG/CG/G_L2_2_16_28/G_i_j (g_block_2)                    0.00       0.62 r
+  CG/CG/C[7] (carry_generator_sparse_tree_N32_carry_range4)
+                                                          0.00       0.62 r
+  CG/C[7] (carry_generator_N32_carry_range4)              0.00       0.62 r
+  SG/Carry[6] (sum_generator_N32_Nbit_blocks4)            0.00       0.62 r
+  SG/CSB_8/Cin (carry_select_block_N4_1)                  0.00       0.62 r
+  SG/CSB_8/MUX/S (muxN1_N4_1)                             0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_0/S (mux21_4)                      0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_0/NOT1/A (iv_4)                    0.00       0.62 r
+  SG/CSB_8/MUX/mux21_g_0/NOT1/U1/ZN (INV_X1)              0.03       0.65 f
+  SG/CSB_8/MUX/mux21_g_0/NOT1/Y (iv_4)                    0.00       0.65 f
+  SG/CSB_8/MUX/mux21_g_0/NAND2/B (nd2_11)                 0.00       0.65 f
+  SG/CSB_8/MUX/mux21_g_0/NAND2/U1/ZN (NAND2_X1)           0.03       0.68 r
+  SG/CSB_8/MUX/mux21_g_0/NAND2/Y (nd2_11)                 0.00       0.68 r
+  SG/CSB_8/MUX/mux21_g_0/NAND3/B (nd2_10)                 0.00       0.68 r
+  SG/CSB_8/MUX/mux21_g_0/NAND3/U1/ZN (NAND2_X1)           0.02       0.70 f
+  SG/CSB_8/MUX/mux21_g_0/NAND3/Y (nd2_10)                 0.00       0.70 f
+  SG/CSB_8/MUX/mux21_g_0/Y (mux21_4)                      0.00       0.70 f
+  SG/CSB_8/MUX/Y[0] (muxN1_N4_1)                          0.00       0.70 f
+  SG/CSB_8/S[0] (carry_select_block_N4_1)                 0.00       0.70 f
+  SG/S[28] (sum_generator_N32_Nbit_blocks4)               0.00       0.70 f
+  S[28] (out)                                             0.00       0.70 f
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
