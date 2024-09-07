@@ -1,0 +1,8 @@
+vcom -reportprogress 300 -work work ./constants.vhd
+vcom -reportprogress 300 -work work ./iv.vhd
+vcom -reportprogress 300 -work work ./nd2.vhd
+vcom -reportprogress 300 -work work ./mux21.vhd
+vcom -reportprogress 300 -work work ./muxn1.vhd
+vcom -reportprogress 300 -work work ./FA.vhd
+vcom -reportprogress 300 -work work ./RCA.vhd
+vcom -reportprogress 300 -work work ./carry_select_block.vhd

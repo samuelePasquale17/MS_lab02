@@ -1,0 +1,15 @@
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/constants.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/iv.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/nd2.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/mux21.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/muxn1.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/FA.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/RCA.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/g_block.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/pg_block.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/pg_network.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/carry_generator_sparse_tree.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/carry_generator.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/carry_select_block.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/sum_generator.vhd
+vcom -reportprogress 300 -work work /home/ms24.37/Desktop/gr37_lab02/ex2.1.4/sim/P4_adder.vhd

@@ -1,0 +1,22 @@
+vcom -reportprogress 300 -work work ./constants.vhd
+vcom -reportprogress 300 -work work ./iv.vhd
+vcom -reportprogress 300 -work work ./nd2.vhd
+vcom -reportprogress 300 -work work ./mux21.vhd
+vcom -reportprogress 300 -work work ./muxn1.vhd
+vcom -reportprogress 300 -work work ./FA.vhd
+vcom -reportprogress 300 -work work ./RCA.vhd
+vcom -reportprogress 300 -work work ./carry_select_block.vhd
+vcom -reportprogress 300 -work work ./sum_generator.vhd
+vcom -reportprogress 300 -work work ./g_block.vhd
+vcom -reportprogress 300 -work work ./pg_block.vhd
+vcom -reportprogress 300 -work work ./pg_network.vhd
+vcom -reportprogress 300 -work work ./carry_generator_sparse_tree.vhd
+vcom -reportprogress 300 -work work ./carry_generator.vhd
+vcom -reportprogress 300 -work work ./P4_adder.vhd
+vcom -reportprogress 300 -work work ./shift_pow2.vhd
+vcom -reportprogress 300 -work work ./complementor.vhd
+vcom -reportprogress 300 -work work ./booth_encoder_block.vhd
+vcom -reportprogress 300 -work work ./booth_encoder.vhd
+vcom -reportprogress 300 -work work ./mux_8to1.vhd
+vcom -reportprogress 300 -work work ./boothmul.vhd
+
